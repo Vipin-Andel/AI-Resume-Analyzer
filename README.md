@@ -248,13 +248,13 @@ Maximum File Size:
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Vipin Andel**
 
-GitHub
+🔗 GitHub: [Vipin-Andel](https://github.com/Vipin-Andel)
 
-https://github.com/Vipin-Andel
+If you found this project useful, consider giving it a ⭐.
 
 ---
 
