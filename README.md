@@ -184,11 +184,43 @@ Create a **.env** file
 OPENAI_API_KEY=your_api_key_here
 ```
 
+## ▶️ Run Locally
+
+Clone the repository
+
+```bash
+git clone https://github.com/Vipin-Andel/AI-Resume-Analyzer.git
+```
+
+Go to the project directory
+
+```bash
+cd AI-Resume-Analyzer
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Create a `.env` file and add your OpenAI API key
+
+```text
+OPENAI_API_KEY=your_api_key_here
+```
+
 Run the application
 
 ```bash
 streamlit run app.py
 ```
+
+## 🌐 Live Demo
+
+Try the application online:
+
+**https://ai-resume-analyzer-e9h9hpbgzcccq7aqpn7slc.streamlit.app/**
 
 ---
 
