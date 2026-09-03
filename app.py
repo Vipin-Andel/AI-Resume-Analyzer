@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 
 from config import (
@@ -49,9 +50,11 @@ from utils.demo_data import (
 # Page Config
 # =====================================================
 
+LOGO_PATH = "assets/ai_resume_analyzer_logo.png"
+
 st.set_page_config(
     page_title=APP_NAME,
-    page_icon=APP_ICON,
+    page_icon=LOGO_PATH if os.path.exists(LOGO_PATH) else APP_ICON,
     layout="centered"
 )
 
@@ -61,7 +64,10 @@ st.set_page_config(
 
 with st.sidebar:
 
-    st.header(f"{APP_ICON} {APP_NAME}")
+    if os.path.exists(LOGO_PATH):
+        st.image(LOGO_PATH, width=110)
+
+    st.header(f"{APP_NAME}")
 
     st.markdown("---")
 
@@ -120,7 +126,14 @@ if not developer_mode and not OPENAI_API_KEY:
 # Main UI
 # =====================================================
 
-st.title(f"{APP_ICON} {APP_NAME}")
+if os.path.exists(LOGO_PATH):
+    col_logo, col_title = st.columns([1, 4])
+    with col_logo:
+        st.image(LOGO_PATH, width=80)
+    with col_title:
+        st.title(APP_NAME)
+else:
+    st.title(f"{APP_ICON} {APP_NAME}")
 
 st.markdown("""
 Upload your resume and receive AI-powered feedback.
