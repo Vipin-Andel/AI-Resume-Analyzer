@@ -390,3 +390,17 @@ if analyze or generate_letter or interview_questions:
 
     except Exception as e:
         handle_api_error(e)
+
+# =====================================================
+# CodeHype Launch Badge
+# =====================================================
+
+st.markdown("---")
+badge_html = """
+<div align="center" style="margin-top: 25px; margin-bottom: 25px;">
+  <a href="https://codehype.ai/product/ai-resume-analyzer?utm_source=codehype_badge" target="_blank" rel="noopener noreferrer">
+    <img src="https://codehype.ai/badges/ai-resume-analyzer.svg?variant=find-us&v=1" alt="Find us on CodeHype" width="380" height="100" style="display:block;border:0;width:100%;max-width:380px;height:auto;" />
+  </a>
+</div>
+"""
+st.markdown(badge_html, unsafe_allow_html=True)
