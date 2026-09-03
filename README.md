@@ -1,5 +1,11 @@
 # 📄 AI Resume Analyzer
 
+<div align="center">
+  <a href="https://codehype.ai/product/ai-resume-analyzer?utm_source=codehype_badge" target="_blank" rel="noopener noreferrer">
+    <img src="https://codehype.ai/badges/ai-resume-analyzer.svg?variant=find-us&v=1" alt="Find us on CodeHype" width="380" height="100" />
+  </a>
+</div>
+
 An AI-powered Resume Analyzer built with **Streamlit** and **OpenAI GPT-4o-mini** that helps job seekers improve their resumes, generate personalized cover letters, and prepare for interviews.
 
 ---
